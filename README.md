@@ -29,10 +29,14 @@ Log.setup_from_env(backend: Log::SyslogBackend.new)
 
 ### Thread Safety
 
-Syslog is a process wide resource in Linux and FreeBSD see `man syslog(3)`. 
-OpenBSD allows reentrant syslogging, but Log::SyslogBackend doesn't currently support it.
-As of version 0.1.0, only a single Log::SyslogBackend is supported per process. Multiple instantiations
-result in undefined behavior. Writting to the SyslogBackend from different fibers result in undefined behavior.
+Currently, Log::SyslogBackend only calls `openlog` once when the first Log::SyslogBackend is instantiated.
+Subsequent instantiations of Log::SyslogBackend does not change the ident, facility, nor options field registered by
+`openlog`.
+
+In conclusion, multiple Log::SyslogBackend can be instantiated, but only the first instiantiation applies the specified
+options.
+Writes by any number of Log::SyslogBackends are always thread safe as specified by
+[POSIX](https://pubs.opengroup.org/onlinepubs/000095399/functions/xsh_chap02_09.html#tag_02_09_01).
 
 ## Contributing
 
