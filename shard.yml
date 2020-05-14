@@ -1,0 +1,12 @@
+name: syslogger
+version: 0.1.0
+
+description: |
+  A Log::Backend that writes to syslog.
+
+authors:
+  - Thinsit (Laza) Upatising <lazau@lazau.com>
+
+crystal: 0.34.0
+
+license: MIT
