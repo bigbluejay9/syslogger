@@ -1,3 +1,5 @@
+[![GitHub release](https://img.shields.io/github/release/lazau/syslogger.svg)](https://github.com/lazau/syslogger/releases)
+
 # Syslogger - A Log::Backend that writes to syslog.
 
 ## Installation
@@ -41,4 +43,4 @@ result in undefined behavior. Writting to the SyslogBackend from different fiber
 
 - [Laza Upatising](https://github.com/lazau) - creator and maintainer
 - [Chris Huxtable](https://github.com/chris-huxtable) - author of
-  [syslog.cr](https://github.comchris-huxtable/syslog.cr), where major pieces of code originates (lib_c, enums).
+  [syslog.cr](https://github.com/chris-huxtable/syslog.cr), where major pieces of code originates (lib_c, enums).
