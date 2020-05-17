@@ -1,7 +1,7 @@
 # syslogger
 [![Docs](https://img.shields.io/badge/docs-available-brightgreen.svg)](https://lazau.github.io/syslogger/)
 [![GitHub release](https://img.shields.io/github/release/lazau/syslogger.svg)](https://github.com/lazau/syslogger/releases)
-[![Build Status](https://travis-ci.org/lazau/syslogger.cr.svg?branch=master)](https://travis-ci.org/lazau/syslogger)
+[![Build Status](https://travis-ci.org/lazau/syslogger.svg?branch=master)](https://travis-ci.org/lazau/syslogger)
 
 # Syslogger - A Log::Backend that writes to syslog.
 
